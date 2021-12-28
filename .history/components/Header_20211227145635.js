@@ -8,17 +8,17 @@ function Header() {
     const { user } = useMoralis();
 
     return (
-        <div className="sticky top-0 p-5 z-50 bg-white shadow-sm border-b-2 border-black text-blue-500">
-            <div className="grid grid-cols-5 lg:grid-cols-6 items-end lg:items-center">
+        <div className="text-blue-500">
+            <div className="grid grid-cols-5 lg:grid-cols-6 items-end">
                 <div className="relative h-24 w-24 mx-auto hidden lg:inline-grid">
                     <Image 
                         layout="fill"
-                        objectFit="contain"
+                        objectFit="cover"
                         className="rounded-full"
                         src="https://ryantang.site/img/cloudlogo.png"
                         />
                 </div>
-                <div className="col-span-4 text-left lg:text-center">
+                <div className="text-left lg:text-center">
                     {/* Avatar */}
                     <div className="relative h-48 w-48 lg:mx-auto border-black border-8 rounded-full">
                         <Avatar logoutOnPress />

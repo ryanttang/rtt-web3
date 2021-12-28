@@ -21,11 +21,13 @@ export default function Home() {
 
       <div 
         className="max-w-screen-2xl mx-auto">
+
         {/* Header */}
         <Header />
         {/* Messages */}
         <Messages />
       </div>
+      <h1>RTT WEB3 SPACE</h1>
     </div>
   );
 
