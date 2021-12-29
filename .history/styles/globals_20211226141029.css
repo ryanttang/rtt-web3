@@ -19,16 +19,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-#navlinks {
-  animation : translate .5s;
-}
-
-@keyframes translate {
-  0%{
-      transform: translateY(-100%);
-  }
-  100%{
-      transform: translateY(0);
-  }
-}

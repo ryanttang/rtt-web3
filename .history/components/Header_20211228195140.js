@@ -50,16 +50,16 @@ function Header() {
         </header>
         <div className="sticky top-30 p-5 z-50 bg-white shadow-sm border-b-2 border-black text-blue-500">
                 <div className="grid grid-cols-5 lg:grid-cols-6 items-end lg:items-center">
-                    <div className="relative h-24 w-24 mx-auto hidden lg:inline-grid">
-                        {/* <Image
+                    {/* <div className="relative h-24 w-24 mx-auto hidden lg:inline-grid">
+                        <Image
                             layout="fill"
                             objectFit="contain"
                             className="rounded-full"
-                            src="https://ryantang.site/img/cloudlogo.png" /> */}
-                    </div>
+                            src="https://ryantang.site/img/cloudlogo.png" />
+                    </div> */}
                     <div className="col-span-4 text-left lg:text-center">
                         {/* Avatar */}
-                        <div className="relative h-32 w-32 lg:mx-auto border-black border-8 rounded-full">
+                        <div className="relative h-48 w-48 lg:mx-auto border-black border-8 rounded-full">
                             <Avatar logoutOnPress />
                         </div>
                         {/* Welcome */}

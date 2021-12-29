@@ -59,7 +59,7 @@ function Header() {
                     </div>
                     <div className="col-span-4 text-left lg:text-center">
                         {/* Avatar */}
-                        <div className="relative h-32 w-32 lg:mx-auto border-black border-8 rounded-full">
+                        <div className="relative h-48 w-48 lg:mx-auto border-black border-8 rounded-full">
                             <Avatar logoutOnPress />
                         </div>
                         {/* Welcome */}
