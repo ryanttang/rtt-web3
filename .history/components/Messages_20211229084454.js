@@ -27,7 +27,7 @@ function Messages() {
     
     return (
         <div className="pb-56">
-            <div className="my-5">
+            <div className="my-5 z-50">
                 <ByMoralis 
                     variant="dark"
                     style={{ marginLeft:"auto", marginRight: "auto" }} />

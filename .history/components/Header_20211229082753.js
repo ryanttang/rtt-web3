@@ -4,21 +4,21 @@ import Image from "next/image";
 import Avatar from "./Avatar";
 import ChangeUsername from "./ChangeUsername";
 
-function Header(logoutOnPress) {
-    const { user, logout } = useMoralis();
+function Header() {
+    const { user } = useMoralis();
 
     return (
         <><header className="relative w-full h-16 bg-white shadow-md transition lg:h-full">
             <nav className="container m-auto py-3 lg:px-20 lg:py-4">
-                <div className="relative flex flex-wrap items-center justify-between">
-                    <div className="relative z-10 w-16 h-16 px-6 flex items-center justify-between lg:w-24">
+                <div classNameName="relative flex flex-wrap items-center justify-between">
+                    <div className="relative z-10 w-16 h-16 px-6 flex items-center justify-between lg:w-auto">
                     <Image
                             layout="fill"
                             objectFit="contain"
                             className="rounded-full"
                             src="https://ryantang.site/img/cloudlogo.png" />
 
-                        <button id="hamburger" className="relative w-10 h-10 left-40 lg:hidden">
+                        <button id="hamburger" className="relative w-10 h-10 lg:hidden">
                             <div role="hidden" id="line" className="inset-0 w-6 h-0.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
                             <div role="hidden" id="line2" className="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
                         </button>
@@ -39,12 +39,8 @@ function Header(logoutOnPress) {
                                 <a href="" className="block w-full py-3 transition hover:text-cyan-600">Blog</a>
                             </li> */}
                             <li className="mt-4 lg:mt-0">
-                                <a href="" 
-                                    className="block w-full py-3 px-6 rounded-xl bg-cyan-500 transition hover:bg-cyan-600 focus:bg-cyan-700 active:bg-cyan-800"
-                                    onClick={() => logoutOnPress && logout()}>
-                                    <span 
-                                        className="block text-center text-white font-semibold lg:text-base">
-                                            Log Out</span>
+                                <a href=([logoutOnPress]) className="block w-full py-3 px-6 rounded-xl bg-cyan-500 transition hover:bg-cyan-600 focus:bg-cyan-700 active:bg-cyan-800">
+                                    <span className="block text-center text-white font-semibold lg:text-base">Log Out</span>
                                 </a>
                             </li>
                         </ul>

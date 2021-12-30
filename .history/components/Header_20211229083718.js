@@ -4,7 +4,7 @@ import Image from "next/image";
 import Avatar from "./Avatar";
 import ChangeUsername from "./ChangeUsername";
 
-function Header(logoutOnPress) {
+function Header() {
     const { user, logout } = useMoralis();
 
     return (

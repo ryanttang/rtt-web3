@@ -28,9 +28,6 @@ export default function Home() {
         <Messages />
       </div>
     </div>
-
-    
-    
   );
 
 }

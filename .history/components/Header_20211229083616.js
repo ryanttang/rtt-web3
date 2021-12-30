@@ -4,7 +4,7 @@ import Image from "next/image";
 import Avatar from "./Avatar";
 import ChangeUsername from "./ChangeUsername";
 
-function Header(logoutOnPress) {
+function Header() {
     const { user, logout } = useMoralis();
 
     return (
@@ -39,11 +39,10 @@ function Header(logoutOnPress) {
                                 <a href="" className="block w-full py-3 transition hover:text-cyan-600">Blog</a>
                             </li> */}
                             <li className="mt-4 lg:mt-0">
-                                <a href="" 
-                                    className="block w-full py-3 px-6 rounded-xl bg-cyan-500 transition hover:bg-cyan-600 focus:bg-cyan-700 active:bg-cyan-800"
-                                    onClick={() => logoutOnPress && logout()}>
+                                <a href="" className="block w-full py-3 px-6 rounded-xl bg-cyan-500 transition hover:bg-cyan-600 focus:bg-cyan-700 active:bg-cyan-800">
                                     <span 
-                                        className="block text-center text-white font-semibold lg:text-base">
+                                        className="block text-center text-white font-semibold lg:text-base"
+                                        onClick={() => logoutOnPress && logout()}>
                                             Log Out</span>
                                 </a>
                             </li>

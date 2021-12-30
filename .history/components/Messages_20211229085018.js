@@ -26,7 +26,7 @@ function Messages() {
     );
     
     return (
-        <div className="pb-56">
+        <div className="pb-56 z-10">
             <div className="my-5">
                 <ByMoralis 
                     variant="dark"

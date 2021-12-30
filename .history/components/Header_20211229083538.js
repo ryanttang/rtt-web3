@@ -4,7 +4,7 @@ import Image from "next/image";
 import Avatar from "./Avatar";
 import ChangeUsername from "./ChangeUsername";
 
-function Header(logoutOnPress) {
+function Header() {
     const { user, logout } = useMoralis();
 
     return (
@@ -18,7 +18,7 @@ function Header(logoutOnPress) {
                             className="rounded-full"
                             src="https://ryantang.site/img/cloudlogo.png" />
 
-                        <button id="hamburger" className="relative w-10 h-10 left-40 lg:hidden">
+                        <button id="hamburger" className="relative w-10 h-10 flex-end lg:hidden">
                             <div role="hidden" id="line" className="inset-0 w-6 h-0.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
                             <div role="hidden" id="line2" className="inset-0 w-6 h-0.5 mt-1.5 m-auto rounded-full bg-gray-500 transition duration-300"></div>
                         </button>
@@ -39,11 +39,10 @@ function Header(logoutOnPress) {
                                 <a href="" className="block w-full py-3 transition hover:text-cyan-600">Blog</a>
                             </li> */}
                             <li className="mt-4 lg:mt-0">
-                                <a href="" 
-                                    className="block w-full py-3 px-6 rounded-xl bg-cyan-500 transition hover:bg-cyan-600 focus:bg-cyan-700 active:bg-cyan-800"
-                                    onClick={() => logoutOnPress && logout()}>
+                                <a href="" className="block w-full py-3 px-6 rounded-xl bg-cyan-500 transition hover:bg-cyan-600 focus:bg-cyan-700 active:bg-cyan-800">
                                     <span 
-                                        className="block text-center text-white font-semibold lg:text-base">
+                                        className="block text-center text-white font-semibold lg:text-base"
+                                        onClick={() => logoutOnPress && logout()}>
                                             Log Out</span>
                                 </a>
                             </li>

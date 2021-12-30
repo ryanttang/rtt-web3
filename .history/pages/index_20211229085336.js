@@ -12,7 +12,7 @@ export default function Home() {
   if (!isAuthenticated) return <Login />
 
   return (
-    <div className="h-screen overflow-y-scroll bg-gradient-to-b from-white to-black overflow-hidden">
+    <div className="h-screen overflow-y-scroll bg-gradient-to-b from-white to-black overflow-hidden z-1">
       
       <Head>
         <title>RTT WEB3 SPACE</title>
@@ -27,6 +27,8 @@ export default function Home() {
         {/* Messages */}
         <Messages />
       </div>
+
+
     </div>
 
     
